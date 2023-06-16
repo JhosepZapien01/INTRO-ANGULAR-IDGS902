@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 @Component({
-  selector:'app_idgs',
+  selector:'app_idgs902',
   template:`
   <h1>IDGS902</h1>
   <form>
