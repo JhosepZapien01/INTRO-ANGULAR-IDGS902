@@ -16,7 +16,7 @@ export class DistanciaComponent {
   b!:number;
   calcular(){
    this.a = Math.pow((this.x1-this.x2),2);
-   this.b =Math.pow((this.y1-this.y1),2);
+   this.b =Math.pow((this.y1-this.y2),2);
 
    this.resultado = Math.sqrt((this.a+this.b));
   }
