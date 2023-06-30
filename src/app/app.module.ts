@@ -11,7 +11,6 @@ import { FormsModule } from '@angular/forms';
 import { SumaComponent } from './utl/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasModule } from './utl/formulario/operas/operas.module';
-import { DistanciaModule } from './utl/distancia/distancia.module';
 import { CalificacionAlumnoComponent } from './utl/calificacion-alumno/calificacion-alumno.component';
 import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
 
@@ -32,8 +31,7 @@ import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    OperasModule,
-    DistanciaModule
+    OperasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
