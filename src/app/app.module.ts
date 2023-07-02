@@ -7,12 +7,14 @@ import { idgs902 } from './utl/idgs902.component';
 import { IdgsComponent } from './utl/idgs/idgs.component';
 import { IricComponent } from './utl/iric/iric.component';
 import { MenuComponent } from './utl/menu/menu.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SumaComponent } from './utl/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasModule } from './utl/formulario/operas/operas.module';
 import { CalificacionAlumnoComponent } from './utl/calificacion-alumno/calificacion-alumno.component';
 import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
+import { AlumnosReactiveComponent } from './formularios/alumnos-reactive/alumnos-reactive.component';
+import { AppRoutingModule } from './app.routing.module';
 
 
 @NgModule({
@@ -25,13 +27,16 @@ import { AlumnoFilterPipe } from './utl/alumno-filter.pipe';
     MenuComponent,
     SumaComponent,
     CalificacionAlumnoComponent,
-    AlumnoFilterPipe
+    AlumnoFilterPipe,
+    AlumnosReactiveComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    OperasModule
+    OperasModule,
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
